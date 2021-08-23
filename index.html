@@ -23,11 +23,16 @@
             </div>
             <ul class="navbar">
                 <li><a href="#about"><span class="green">01. </span>About</a</li>
-                <li><a href="#experience"><span class="green">02. </span>Experience</a</li>
-                <li><a href="#work"><span class="green">03. </span>Work</a</li>
+                <li><a href="#work"><span class="green">02. </span>Work</a</li>
+                <li><a href="#blog"><span class="green">03. </span>Blog</a</li>
                 <li><a href="#contact"><span class="green">04. </span>Contact</a</li>
                 <li class="resume"><a href="https://drive.google.com/file/d/1lHABWYECfjJDMp7OEwimpql-jBb4LsBx/view?usp=sharing" target="_blank">Resume</a></li>
             </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
     </header>
     <!-- Header End Here -->
@@ -79,7 +84,7 @@
 
         <article id="experience">
             <div class="heading">
-                <h2><span class="green">02. </span>Where I've Worked</h2> 
+                <h2><span class="green"></span>Where I've Worked</h2> 
                 <div class="line">
                     <hr>
                 </div>
@@ -100,7 +105,16 @@
             </div>
             <section id="ancipa-studio">
                 <picture class="ancipa">
-                   <a href="https://ancipastudio.com/" target="_blank"><img src="./assets/images/ancipa.JPG" width="700"alt="Ancipa-Studio"></a> 
+                   <a href="https://ancipastudio.com/" target="_blank">
+                    <picture class="hero__picture">
+                        <!-- Gambar pertama ini akan aktif ketika ukuran lebar browser = 0px sampai maksimal 1023px -->
+                        <source media="(max-width: 1023px)" srcset="./assets/images/ancipa-2.JPG">
+                        <!-- Gambar pertama ini akan aktif ketika ukuran lebar browser = minimal 1024px sampai tak terhingga -->
+                        <source media="(min-width: 1024px)" srcset="./assets/images/ancipa.JPG">
+                        <!-- Ini adalah gambar default/fallback ketika browser tidak bisa mengenali responsive image -->
+                        <img src="./assets/images/ancipa.JPG" alt="Responsive Hero Image">
+                      </picture>
+                </a> 
                 </picture>
                 <div class="content-desc">
                     <div class="h3-heading">
@@ -122,7 +136,16 @@
 
             <section id="reddot">
                 <picture class="reddot" style="order: 2;">
-                    <a href="https://reddotlivestream.netlify.app/" target="_blank"><img src="./assets/images/reddot.JPG" width="700"alt="Ancipa-Studio"></a> 
+                    <a href="https://reddotlivestream.netlify.app/" target="_blank">
+                        <picture class="hero__picture">
+                            <!-- Gambar pertama ini akan aktif ketika ukuran lebar browser = 0px sampai maksimal 1023px -->
+                            <source media="(max-width: 1023px)" srcset="./assets/images/reddot-2.JPG">
+                            <!-- Gambar pertama ini akan aktif ketika ukuran lebar browser = minimal 1024px sampai tak terhingga -->
+                            <source media="(min-width: 1024px)" srcset="./assets/images/reddot.JPG">
+                            <!-- Ini adalah gambar default/fallback ketika browser tidak bisa mengenali responsive image -->
+                            <img src="./assets/images/reddot.JPG" alt="Responsive Hero Image">
+                          </picture>
+                    </a>  
                  </picture>
                 <div class="content-desc" style="order: 1;">
                     <div class="h3-heading">
@@ -141,9 +164,18 @@
                     </div>
                 </div>
             </section>
-            <section id="ancipa-studio">
-                <picture class="ancipa">
-                   <a href="https://ancipastudio.com/" target="_blank"><img src="./assets/images/campflix.JPG" width="700"alt="Ancipa-Studio"></a> 
+            <section id="campflix">
+                <picture class="campflix">
+                    <a href="https://bitbucket.org/mhmmdhnf/km-fe-muhamad/src/master/" target="_blank">
+                        <picture class="hero__picture">
+                            <!-- Gambar pertama ini akan aktif ketika ukuran lebar browser = 0px sampai maksimal 1023px -->
+                            <source media="(max-width: 1023px)" srcset="./assets/images/campflix-2.JPG">
+                            <!-- Gambar pertama ini akan aktif ketika ukuran lebar browser = minimal 1024px sampai tak terhingga -->
+                            <source media="(min-width: 1024px)" srcset="./assets/images/campflix.JPG">
+                            <!-- Ini adalah gambar default/fallback ketika browser tidak bisa mengenali responsive image -->
+                            <img src="./assets/images/campflix.JPG" alt="Responsive Hero Image">
+                          </picture>
+                    </a> 
                 </picture>
                 <div class="content-desc">
                     <div class="h3-heading">
@@ -166,7 +198,7 @@
 
         <article id="blog">
             <div class="heading">
-                <h2><span class="green">04. </span>Things I've Written</h2> 
+                <h2><span class="green">03. </span>Things I've Written</h2> 
             </div>
             <div class="grid-container">
                 <div class="story">
@@ -174,15 +206,15 @@
                         <div class="folder">
                         <i class="far fa-folder fa-1x"></i>
                     </div>
-                        <a href="https://reddotlivestream.netlify.app/" title="External Link" aria-label="External Link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="./blog.html" title="External Link" aria-label="External Link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 
                     <div class="blog-desc">
                         <div class="blog-title">
-                            <a href=""><h4>Think big, start small.</h4></a> 
+                            <a href="./blog.html"><h4>Think big, start small.</h4></a> 
                         </div>
                         <div class="meta-desc">
-                            <a href="">
+                            <a href="./blog.html">
                             <p>Gue termasuk orang yang susah untuk memulai. Emang dasarnya manusia males ya gini. Setiap gue ingin memulai sesuatu selalu ada 1269 alasan yang bikin gue mundur. </p>
                         </a>
                         </div>
@@ -196,15 +228,15 @@
                         <div class="folder">
                         <i class="far fa-folder fa-1x"></i>
                     </div>
-                        <a href="https://reddotlivestream.netlify.app/" title="External Link" aria-label="External Link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="./blog.html" title="External Link" aria-label="External Link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 
                     <div class="blog-desc">
                         <div class="blog-title">
-                            <a href=""><h4>Think big, start small.</h4></a> 
+                            <a href="./blog.html"><h4>Think big, start small.</h4></a> 
                         </div>
                         <div class="meta-desc">
-                            <a href="">
+                            <a href="./blog.html">
                             <p>Gue termasuk orang yang susah untuk memulai. Emang dasarnya manusia males ya gini. Setiap gue ingin memulai sesuatu selalu ada 1269 alasan yang bikin gue mundur. </p>
                         </a>
                         </div>
@@ -305,13 +337,22 @@
         </article>
 
         <article id="contact">
-                <p class="green">What's Next?</p>
+                <p class="green"><span class="green">04. </span> What's Next?</p>
                 <h1 class="lightest-slate">Get In Touch</h1>
                 <p class="slate">Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
                 <a href="mailto: mhmmdhnf10@gmail.com" class="resume">Say Hello</a>
         </article>
 
         <footer>
+            <aside>
+                <div class="sidebar-bottom">
+                    <a href="https://github.com/dontbeasalad" title="Github" aria-label="Github" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://www.instagram.com/mhmmdhnf/" title="Instagram" aria-label="Instagram" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://twitter.com/Sodaranyahazard" title="Twitter "aria-label="Twitter" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/mhmmdhnf/" title="Linkedin" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                    <a href="https://mhmmdhnf.medium.com/" title="Medium" aria-label="Medium" target="_blank" rel="noreferrer"><i class="fab fa-medium fa-2x"></i></a>
+                </div>
+            </aside>
             <a href="https">
                 <p>Built & Coded by Muhamad Hanif <br>
                     Copyright &copy; 2021 All Rights Reserved</p>   
@@ -320,5 +361,6 @@
         </footer>
     </main>
 <script src="./assets/js/app.js"></script>
+<script src="./assets/js/burger.js"></script>
 </body>
 </html>

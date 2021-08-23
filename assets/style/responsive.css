@@ -1,4 +1,66 @@
-@media only screen and (max-width: 600px) {
+:root {
+  --navy-: #0a192f;
+  --light-navy: #112240;
+  --green-: #64ffda;
+  --lightest-navy: #233554;
+  --slate: #8892b0;
+  --lightest-slate: #ccd6f6;
+  --light-slate: #a8b2d1;
+  --white: #e6f1ff;
+}
+@media only screen and (max-width: 1550px) {
+}
+@media only screen and (max-width: 1366px) {
+}
+@media only screen and (max-width: 1279px) {
+}
+@media only screen and (max-width: 1024px) {
+}
+@media only screen and (max-width: 991px) {
+}
+@media only screen and (max-width: 768px) {
+  nav {
+    padding: 0rem 1.5rem 0rem 1.5rem;
+  }
+  nav.scroll {
+    padding: 0rem 1.2rem 0rem 1.2rem;
+  }
+  .navbar {
+    position: absolute;
+    right: 0px;
+    height: 100vh;
+    top: 0vh;
+    width: 40%;
+    background-color: var(--light-navy);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .navbar li {
+    opacity: 0;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  nav .burger {
+    display: block;
+    cursor: pointer;
+  }
+  .nav-active {
+    transform: translateX(0%);
+  }
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
   main {
     padding: 2rem;
   }
@@ -9,8 +71,22 @@
   .sidebar-right {
     display: none;
   }
+
   .sidebar-left {
     display: none;
+  }
+  aside {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .sidebar-bottom {
+    display: block;
+  }
+  .sidebar-bottom a {
+    margin-right: 10px;
+    margin-left: 10px;
   }
   .hero h1 {
     font-size: 34px;
@@ -20,17 +96,25 @@
   p.green {
     margin-bottom: 10px;
   }
-
+  .hero {
+    margin-bottom: 0;
+  }
   .hero p {
     max-width: 100%;
   }
   #about {
     margin-left: 0;
     margin-right: 0;
+    margin-top: 60px;
+    padding-top: 100px;
+  }
+  #about picture {
+    margin-top: 40px;
   }
   .about-me {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 60px;
   }
   span.green {
     font-size: 12px;
@@ -42,12 +126,9 @@
   .desc p {
     padding-right: 0;
   }
-  picture {
-    width: 200px;
-    margin-top: 30px;
-  }
   picture img {
     width: 200px;
+    position: relative;
   }
   picture img:hover {
     width: 200px;
@@ -55,5 +136,188 @@
   .box {
     width: 200px;
     height: 200px;
+  }
+  #experience {
+    margin: 0;
+    padding: 0;
+  }
+  #work {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  #work img {
+    width: 311px;
+    height: 354px;
+  }
+
+  #ancipa-studio {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  #ancipa-studio picture.ancipa {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #reddot picture.reddot {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #campflix picture.campflix {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #reddot {
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  #campflix {
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  .ancipa img {
+    position: relative;
+  }
+  .campflix img {
+    position: relative;
+  }
+  .content-desc {
+    width: 311px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 3rem 1rem 0rem 1rem;
+  }
+  .content-desc h3 {
+    color: var(--white);
+  }
+  .work-desc {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    width: auto;
+  }
+  .work-desc p {
+    color: var(--white);
+  }
+  .work-stack span {
+    color: var(--white);
+    margin-left: 0;
+  }
+  .work-link a {
+    margin: 0;
+  }
+  .work-link {
+    margin-top: 10px;
+  }
+  .reddot img {
+    position: relative;
+    right: 0;
+  }
+  #reddot .content-desc {
+    margin-top: 50px;
+  }
+  #blog {
+    margin-bottom: 50px;
+  }
+  #blog .grid-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  #blog .story {
+    width: 311px;
+    padding: 2rem;
+    margin: 0 0 20px 0;
+  }
+  #blog .story:hover {
+    width: 311px;
+  }
+  #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 2rem 0 2rem;
+    text-align: center;
+    margin-bottom: 220px;
+  }
+  #contact h1 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 340px) {
+}
+@media only screen and (max-width: 320px) {
+  header {
+    overflow-x: hidden;
+  }
+  .sidebar-bottom a {
+    font-size: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  picture {
+    height: 200px;
+  }
+  #about picture {
+    margin-top: 40px;
+  }
+  #work img {
+    width: 220px;
+    height: auto;
+  }
+  #work .content-desc {
+    width: 220px;
+    height: 234px;
+    font-size: 5px;
+    top: -22px;
+  }
+  #work .content-desc h3 {
+    font-size: 14px;
+  }
+  #work .content-desc p {
+    font-size: 10px;
+  }
+  #reddot .content-desc {
+    margin-top: 20px;
+  }
+  .work-desc p {
+    line-height: 13px;
+  }
+  .h3-heading {
+    margin-bottom: 3px;
+  }
+  .work-stack span {
+    font-size: 8px;
+    margin-right: 10px;
+  }
+  .work-link a {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  #blog .story {
+    width: 220px;
+    height: auto;
+    padding: 2rem;
+    margin: 0 0 20px 0;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  #work hr {
+    display: none;
   }
 }
