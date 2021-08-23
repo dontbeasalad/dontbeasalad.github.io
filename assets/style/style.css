@@ -61,7 +61,6 @@ span,
 body {
   background-color: var(--navy-);
 }
-
 nav {
   font-family: "SF Mono Light";
   width: 100%;
@@ -243,6 +242,88 @@ aside .vl {
   padding-top: 200px;
   margin-left: 6rem;
   margin-right: 6rem;
+}
+ul.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0px 10px;
+  padding: 0px;
+  margin: 20px 0px 0px;
+  overflow: hidden;
+  list-style: none;
+}
+ul.skills-list li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-size: 12px;
+  color: var(--slate);
+  font-family: "SF Mono Light";
+}
+ul.skills-list li::before {
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  color: var(--green-);
+  font-size: var(--fz-sm);
+  line-height: 12px;
+}
+#my-office {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+#my-office p.slate {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: bold;
+}
+#my-office .office {
+  padding-top: 5px;
+}
+#my-office .office p {
+  font-size: 12px;
+  font-family: "SF Mono Light";
+  color: var(--green-);
+  font-weight: 300;
+}
+#my-office ul.skills-list {
+  display: block;
+  gap: 0px 10px;
+  padding: 0px;
+  margin: 20px 0px 0px;
+  overflow: hidden;
+  list-style: none;
+}
+#my-office ul.skills-list li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-size: 14px;
+  color: var(--slate);
+  font-family: "Open Sans", sans-serif;
+}
+#my-office ul.skills-list li::before {
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  padding-top: 3px;
+  color: var(--green-);
+  font-size: 14px;
+  line-height: 12px;
+}
+.office-work span a {
+  font-weight: bold;
+  color: var(--green-);
+  text-decoration: none;
+}
+.office-work span a:hover {
+  text-decoration: underline;
+}
+.office-work p.green {
+  font-size: 12px;
+  color: var(--slate);
+  margin-top: 10px;
 }
 .heading {
   display: flex;
