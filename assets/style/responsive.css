@@ -15,8 +15,50 @@
 @media only screen and (max-width: 1279px) {
 }
 @media only screen and (max-width: 1024px) {
-}
-@media only screen and (max-width: 991px) {
+  main {
+    padding: 3rem;
+    overflow-x: hidden;
+  }
+  #experience {
+    margin-right: 5rem;
+    padding: 0;
+  }
+  #my-office .office {
+    width: 500px;
+    margin-right: 20px;
+  }
+  #work img {
+    width: 660px;
+  }
+  .sidebar-right {
+    display: none;
+  }
+
+  .sidebar-left {
+    display: none;
+  }
+  aside {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .sidebar-bottom {
+    display: block;
+  }
+  .sidebar-bottom a {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .reddot img {
+    right: 190px;
+  }
+  #blog .grid-container {
+    padding: 0;
+  }
+  #blog .story {
+    width: 292px;
+  }
 }
 @media only screen and (max-width: 768px) {
   nav {
@@ -119,12 +161,24 @@
   span.green {
     font-size: 12px;
   }
-  .line hr {
-    width: 130px;
-    margin-left: 20px;
-  }
   .desc p {
     padding-right: 0;
+  }
+  .line hr {
+    width: 50px;
+    margin-left: 20px;
+  }
+  #my-office .office {
+    margin-right: 10px;
+  }
+  #work hr {
+    display: none;
+  }
+  .work-link i {
+    margin-right: 10px;
+  }
+  ul.skills-list {
+    padding-left: 2rem;
   }
   picture img {
     width: 200px;
@@ -149,6 +203,7 @@
   #work img {
     width: 311px;
     height: 354px;
+    filter: brightness(0.5) grayscale(100%);
   }
 
   #ancipa-studio {
@@ -258,7 +313,11 @@
     font-size: 30px;
   }
 }
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 360px) {
+  .desc p {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
 }
 @media only screen and (max-width: 320px) {
   header {
@@ -271,6 +330,10 @@
   }
   picture {
     height: 200px;
+  }
+  .desc p {
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
   #about picture {
     margin-top: 40px;
@@ -319,5 +382,14 @@
   }
   #work hr {
     display: none;
+  }
+}
+@media only screen and (max-width: 280px) {
+  .desc p {
+    padding-right: 4.5rem;
+    padding-left: 4.5rem;
+  }
+  .desc ul {
+    margin-left: 2rem;
   }
 }

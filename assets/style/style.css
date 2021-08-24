@@ -384,6 +384,11 @@ picture img:hover {
   margin: 0 6rem 0 6rem;
   padding: 0 6rem 0 6rem;
 }
+span.this {
+  color: var(--green-);
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
 
 /* Work */
 #work {
@@ -498,7 +503,7 @@ h3 {
   z-index: 0;
 }
 #blog {
-  padding-top: 120px;
+  padding-top: 170px;
   margin-bottom: 200px;
 }
 #blog .grid-container {
